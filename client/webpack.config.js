@@ -20,12 +20,17 @@ module.exports = () => {
     plugins: [                  //lines 21-24 copied from lesson 16
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "Webpack Plugin",
+        title: "JATE",
       }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js'
+      }),
+
       new WebpackPwaManifest({
         name: 'JATE',
         short_name: 'JATE',
-        description: 'Edit text',
+        description: 'Text Editor',
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
         start_url: '/',
@@ -38,10 +43,6 @@ module.exports = () => {
           },
         ],
       }),
-      new InjectManifest({
-        swSrc: './src-sw.js',
-        swDest: 'src-sw.js'
-      })
 
 
 
