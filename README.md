@@ -10,13 +10,16 @@ SO THAT I can reliably retrieve them for later use
 
 Installation: 
   Enter the following commands into the command line.
-  npm run install
-  npm run build
+  npm run install,
+  npm run build,
   npm run start:dev
   
 Deploy the app using Heroku - https://still-sierra-05375.herokuapp.com/
 
 Visit the Repo on Github - https://github.com/AJShea86/text-editor-shea
+
+![text-editor-screenshot](https://user-images.githubusercontent.com/97988155/162641780-58731996-e773-4202-b4c7-9d1103c1f56b.png)
+
   
   
 
